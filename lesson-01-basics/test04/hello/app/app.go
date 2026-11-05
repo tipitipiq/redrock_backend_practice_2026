@@ -2,10 +2,12 @@
 //
 // 课件的例子用的是 main 包，这里改成普通的 app 包，
 // 因为第四部分说过 main 包不能被其他包导入——包括外部测试文件。
+
 package app
 
 import (
 	"fmt"
+	"redrock/teaching-exercises/lesson-01-basics/test04/hello/calc"
 	// TODO: 在这里补上 calc 包的导入路径。
 	//
 	// 导入路径 = module 路径 + 包所在的子目录。
@@ -18,11 +20,12 @@ import (
 // Sum 借助 calc 包完成加法。
 func Sum(a, b int) int {
 	// TODO: 调用 calc.Add。
-	return 0
+	return calc.Add(a, b)
 }
 
 // Describe 返回 "1 + 2 = 3" 这样的一行，末尾没有换行。
 func Describe(a, b int) string {
 	// TODO: 用 fmt.Sprintf 把算式和 calc.Add 的结果拼起来。
-	return fmt.Sprintf("")
+	res := calc.Add(a, b)
+	return fmt.Sprintf("%d + %d = %d",a,b,res)
 }

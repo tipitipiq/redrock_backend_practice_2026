@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "example.com/hello/internal/secret"
-	_ "example.com/hello/user_service"
+ "example.com/hello/secret/secret"
+	 "example.com/hello/userservice"
 )
 
-func main() {}
+func main() {}example.com/hello/secret/secret

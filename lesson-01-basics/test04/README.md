@@ -72,8 +72,7 @@ calc.Add(1, 2)
 
 ```bash
 go test ./lesson-01-basics/test04/...
-go test -v ./lesson-01-basics/test04/hello/app
-```
+go test -v ./lesson-01-basics/test04/hello/app```
 
 ## 评分点
 
@@ -81,7 +80,8 @@ go test -v ./lesson-01-basics/test04/hello/app
 |---|---|---|
 | `TestHelperIsVisibleInsideThePackage` | `calc`（同包测试） | 小写的 `helper` 在包内可以直接调用 |
 | `TestAddDoubledGoesThroughHelper` | `calc`（同包测试） | 结果正确，**并且**源码里确实调用了 `helper` |
-| `TestSum` | `app_test`（外部测试） | `Sum` 走 `calc.Add` 得到正确结果 |
+| `TestSum` 
+| `app_test`（外部测试） | `Sum` 走 `calc.Add` 得到正确结果 |
 | `TestDescribe` | `app_test`（外部测试） | 拼出的字符串完全一致 |
 | `TestAppImportsCalcByItsFullPath` | `app_test`（外部测试） | `app.go` 用完整路径导入了 `calc` |
 

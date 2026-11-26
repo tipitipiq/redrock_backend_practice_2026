@@ -10,7 +10,7 @@
 
 ### 第一步：写测试，看它失败
 
-`even/even.go` 里的 `IsEven` **是错的**，它漏掉了一整类输入。先编辑 `even/student_test.go`，补完 `TestIsEven`：
+`even/even.go` 里的 `IsEven` **是错的**，它漏掉了一    整类输入。先编辑 `even/student_test.go`，补完 `TestIsEven`：
 
 - 至少检查 `IsEven(2)`、`IsEven(3)`、`IsEven(0)`、`IsEven(-2)` 四种输入；
 - 结果和预期不一致时，用 `t.Error` / `t.Errorf` / `t.Fatal` / `t.Fatalf` 报告失败。
